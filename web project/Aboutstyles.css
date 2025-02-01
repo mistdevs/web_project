@@ -1,0 +1,439 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color:rgb(0, 0, 0);
+  
+    background-color: #e9dfc3;
+    background-size: cover; /* Ensures theimage covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    background-position: center; /* Centers the image in the viewport */
+    color: rgb(0, 0, 0); /* Ensures text is readable */
+  }
+
+  
+        /* Navbar styling */
+        nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #333;
+          padding: 10px 20px;
+      }
+
+      .logo-container {
+          display: flex;
+          align-items: center;
+      }
+
+      .logo-container img {
+          height: 60px; /* Adjust logo size */
+          margin-right: 10px;
+      }
+
+      .logo-container span {
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
+      }
+
+      ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+      }
+
+      ul li {
+          position: relative;
+      }
+
+      ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+          padding: 5px 10px;
+      }
+
+      ul li a:hover {
+          background-color: #575757;
+          border-radius: 5px;
+      }
+
+      /* Dropdown styling */
+      .dropdown {
+          position: relative;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #444;
+          min-width: 150px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+      }
+
+      .dropdown-content a {
+          display: block;
+          color: white;
+          padding: 8px 10px;
+          text-decoration: none;
+      }
+
+      .dropdown-content a:hover {
+          background-color: #575757;
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      .login-btn {
+          color: white;
+          background-color: #0f64d3;
+          padding: 5px 15px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      .login-btn:hover {
+          background-color: #444;
+      }
+  
+  
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    position: relative;
+  
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('download (13).jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5; /* Adjust transparency (0 = fully transparent, 1 = fully opaque) */
+  z-index: 0; /* Ensures the overlay stays below the content */
+}
+
+.section {
+  flex: 1; /* Allows sections to share equal width. Adjust as needed */
+  text-align: center;
+}
+.paragraph-section {
+  text-align: center; /* Aligns text in paragraph to the left */
+  padding: 30px;
+  padding-top: 50px;
+  padding-left: 50px;
+  color: #ffffff;
+  
+  
+}
+
+img {
+  max-width: 100%; /* Ensures images are responsive */
+  
+  
+}
+.section-1 {
+padding-top: 4%;
+padding-right: 10%;
+
+}
+.section-2 {
+padding-right: 40px;
+padding-top: 15%;
+padding-bottom: 15%;
+}
+
+
+.intro {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.intro h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.intro hr {
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid #333;
+}
+
+.collection {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  background-color: #000000;
+  position: relative;
+  color: #ffffff;
+
+}
+.collection::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('download (14).jpeg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+opacity: 0.5; /* Adjust transparency */
+z-index: 0; /* Ensures the overlay stays below the content */
+}
+
+
+
+/* Ensure content stays above the background */
+.container > *, .collection > * {
+position: relative;
+z-index: 1;
+}
+
+
+.collection img {
+  width: 68%;
+  padding: 30px;
+ 
+  
+}
+
+.collection p {
+  width: 30%;
+  text-align: center;
+ 
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+.vision-mission-section,.description {
+  padding: 45px 180px;
+  display: grid;
+  gap: 50px; /* Space between Vision and Mission sections */
+}
+
+.vision, .mission,.description {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  justify-content: center;
+ 
+}
+
+.vision h3 {
+  color: #bd5f0d; /* Red color for headings */
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.vision-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff; 
+  
+}
+
+.vision-text {
+  flex: 1;
+  margin-right: 20px; /* Space between text and image */
+  text-align: right;
+  
+}
+
+.vision-image {
+  flex: 1;
+  height: 600px; /* Maintain aspect ratio */
+  width: 500px;
+}
+
+.vision p {
+  color: #000000;
+  font-size: 1em;
+  text-align: center;
+}
+.mission {
+  flex-direction: column; /* For centered alignment in Mission */
+  text-align: center;
+  
+}
+.mission h3 {
+  color: #05077b; /* Red color for headings */
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff; 
+}
+
+.mission-text {
+  flex: 5;
+  margin-right: 20px; /* Space between text and image */
+  margin-left:20px ;
+  text-align: left;
+  padding-left: 25px;
+
+  
+}
+
+.mission-image {
+  flex: 1;
+  height: 600px; /* Maintain aspect ratio */
+  width: 600px;
+  
+}
+
+.mission p {
+  color: #000000;
+  font-size: 1.1em;
+  text-align: center;
+  
+}
+.brands h2{
+text-align: center;
+font-size: 2.3em;
+padding-top: 20px;
+color: #000000;
+
+}
+.brands hr{
+width: 50%;
+margin: 10px auto;
+border: 1px solid #000000;
+
+
+}
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+.logo {
+  background-image: url('download (18).jpeg');
+  
+}
+/* Styling the container */
+.image-row {
+display: flex; /* Flexbox to place items horizontally */
+justify-content: space-around; /* Add space between images */
+align-items: center; /* Align images vertically if needed */
+padding:30px 80px; /* Add padding around the container */
+
+
+
+
+}
+
+/* Styling individual images */
+.image-row img {
+width: 20%; /* Adjust the width to fit 4 images nicely */
+max-width: 200px; /* Optional: Limit the maximum size */
+height: auto; /* Maintain aspect ratio */
+border: 2px solid #ccc; /* Optional: Add a border */
+border-radius: 10px; /* Optional: Rounded corners */
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow effect */
+}
+
+/* Hover effect */
+.image-row img:hover {
+transform: scale(1.1); /* Slightly zoom the image */
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for a popping effect */
+border-color: #000000; /* Optional: Change border color on hover */
+}
+
+
+.strip {
+padding: 30px 180px;
+background-color: rgb(214, 24, 24);
+width: 100%;
+
+}
+.moving-text {
+width: 100%; /* Full width */
+white-space: nowrap; /* Prevent text wrapping */
+overflow: hidden; /* Hide overflow */
+box-sizing: border-box;
+animation: marquee 10s linear infinite; /* Animation details */
+color: white;
+font-size: 2em;
+}
+
+@keyframes marquee {
+0% {
+  transform: translateX(100%); /* Start outside the viewport (right) */
+}
+100% {
+  transform: translateX(-100%); /* Move to the left outside the viewport */
+}
+}
+.description h3 {
+color: #8a3331; /* Red color for headings */
+font-size: 2.2em;
+margin-bottom: 10px;
+text-align: center;
+}
+.description-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+background-color: #ffffff; 
+}
+
+.description-text {
+flex: 1;
+margin-right: 20px; /* Space between text and image */
+margin-left: 30px;
+text-align: center;
+color: #000000;
+}
+
+.description-image {
+flex: 1;
+height: 600px; /* Maintain aspect ratio */
+width: 500px;
+}
+

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuexStep</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">   
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+  /* nav bar */      
+        nav {        
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0a0909;
+            padding: 10px 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 70px; /* Adjust logo size */
+            margin-right: 10px;
+        }
+
+        .logo-container span {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+
+        ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        /* Dropdown styling */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: white;
+            padding: 8px 10px;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        .login-btn {
+            color: white;
+            background-color: #0f64d3;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #444;
+        }
+
+        .banner img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .hero {
+            text-align: center;
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            color: rgba(12, 1, 1, 0.945);
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+              /* category selection */
+        .box {display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e7dcdc;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            width: 80%;
+            height: 80%;
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: rgb(10, 10, 10);
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: underline;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .item1 { background-image: url('women.jpg'); }
+        .item2 { background-image: url('men.jpg'); }
+        
+
+        
+       
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <!-- Left: Logo and Name -->
+        <div class="logo-container">
+            <img src="logo.png" alt="LuexStep Logo">
+            <span>LuexStep</span>
+        </div>
+
+        <!-- Right: Navigation Links -->
+        <ul>
+            <li><a href="../Home Page/Home_Page.html">Home</a></li>
+            <li><a href="../web project/About.html">About</a></li>
+            <li><a href="../Contact Page/conact_us.html">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="#category">Category</a>
+                <div class="dropdown-content">
+                    <a href="../web project/women's footwear.html">Women's</a>
+                    <a href="../web project/men's footwear.html">Men's</a>   
+                </div>
+            </li>
+            <li><a href="../login page/login.html"><button class="login-btn">Login</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <img src="image_1.jpg" alt="Banner">
+    </div>
+
+    <div class="hero" id="home">
+        <h1>Welcome to Luexstep</h1>
+        <p>Find the perfect fit for every step you take!</p>
+    </div>
+
+    <!-- Category section -->
+    <div class="box">
+        <div class="container">
+            <a href="../web project/women's footwear.html" class="item item1">WOMEN'S FOOTWEAR</a>
+            <a href="../web project/men's footwear.html" class="item item2">MEN'S FOOTWEAR</a>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2 style="text-align: center; margin-top: 20px;">About Us</h2>
+        <p style="text-align: center; padding: 0 20px;">
+            At ShoeStore, we believe every step you take should be comfortable and stylish. Explore our
+            wide range of footwear for every occasion!
+        </p>
+    </section>
+
+ <!-- Footer -->
+    <footer style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: #0e0d0d; color: white; font-family: Arial, sans-serif;">
+
+        <!-- Left Section: Company Logo and Name -->
+        <div style="display: flex; align-items: center; flex-direction: column; text-align: left;">
+            <img src="logo.png" alt="LuexStep Logo" style="width: 80px; height: 80px; margin-bottom: 10px;">
+            <div>
+                <p style="margin: 0; font-size: 16px; font-weight: bold;">LuexStep</p>
+                <p style="margin: 0; font-size: 14px;">Shoe Manufacturing Company</p>
+            </div>
+        </div>
+    
+        <!-- Center Section: Get In Touch -->
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Get In Touch</h3>
+            <p style="margin: 5px 0;">4th Lane, Colombo Road, Boralesgauwa</p>
+            <p style="margin: 5px 0;">Email: <a href="mailto:contact@luexstep.com" style="color: #00bcd4; text-decoration: none;">contact@luexstep.com</a></p>
+            <p style="margin: 5px 0;">Phone: <a href="tel:01120112526799" style="color: #00bcd4; text-decoration: none;">0112-0112-526799</a></p>
+        </div>
+    
+        <!-- Right Section: Social Media Links -->
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Follow Us</h3>
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="instagram.png" alt="instagram"  style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="facebook.png" alt="facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="youtube.png" alt="YouTube" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://x.com/?lang=en" target="_blank">
+                    <img src="x.png" alt="x" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

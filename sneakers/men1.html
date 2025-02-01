@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuexStep - Sneakers</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <!-- Left: Logo and Name -->
+        <div class="logo-container">
+            <img src="logo.png" alt="LuexStep Logo">
+            <span>LuexStep</span>
+        </div>
+
+        <!-- Right: Navigation Links -->
+        <ul>
+            <li><a href="../Home Page/Home_Page.html">Home</a></li>
+            <li><a href="../web project/About.html">About</a></li>
+            <li><a href="../Contact Page/conact_us.html">Contact Us</a></li>
+            <li><a href="../login page/login.html"><button class="login-btn">Login</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <p>Welcome to LuexStep! Check out our latest sneakers collection!</p>
+    </div>
+
+    <div id="cart-popup" class="cart-popup"></div>
+
+    <main>
+        <section class="hero">
+            <h1>Explore the Latest Sneakers</h1>
+            <p>Style, comfort, and performance. All in one place.</p>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="products-grid">
+                <!-- First Row of Sneakers -->
+                <div class="product-card">
+                    <a href="shoe1.html">
+                    <img src="sneaker1.jpg" alt="Sneaker 1">
+                    </a>
+                    <h3>Air Boost Sneakers</h3>
+                    <p>Rs. 18,900</p>
+                    <button onclick="addToCart('Air Boost Sneakers')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <a href="shoe2.html">
+                    <img src="sneaker2.jpg" alt="Sneaker 2">
+                    </a>
+                    <h3>Cloud Runner Sneakers</h3>
+                    <p>Rs. 15,900</p>
+                    <button onclick="addToCart('Cloud Runner Sneakers')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <a href="shoe3.html">
+                    <img src="sneaker3.jpg" alt="Sneaker 3">
+                    </a>
+                    <h3>Velocity Pro Sneakers</h3>
+                    <p>Rs. 17,500</p>
+                    <button onclick="addToCart('Velocity Pro Sneakers')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Store Section -->
+        <section class="store">
+            <h2>Our Store</h2>
+            <div class="products-grid">
+                <!-- Remaining Sneakers -->
+                <div class="product-card">
+                    <img src="sneaker4.jpg" alt="Sneaker 4">
+                    <h3>Street Vibe Sneakers</h3>
+                    <p>Rs. 24,500</p>
+                    <button onclick="addToCart('Street Vibe Sneakers')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="sneaker5.jpg" alt="Sneaker 5">
+                    <h3>Urban Trail Sneakers</h3>
+                    <p>Rs. 10,500</p>
+                    <button onclick="addToCart('Urban Trail Sneakers')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="sneaker6.jpg" alt="Sneaker 6">
+                    <h3>Peak Performers</h3>
+                    <p>Rs. 20,000</p>
+                    <button onclick="addToCart('Peak Performers')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="sneaker7.jpg" alt="Sneaker 7">
+                    <h3>Flex Edge Sneakers</h3>
+                    <p>Rs. 64,000</p>
+                    <button onclick="addToCart('Flex Edge Sneakers')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="sneaker8.jpg" alt="Sneaker 8">
+                    <h3>Stride Max Sneakers</h3>
+                    <p>Rs. 8,500</p>
+                    <button onclick="addToCart('Stride Max Sneakers')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="sneaker9.jpg" alt="Sneaker 9">
+                    <h3>Trail Blazers</h3>
+                    <p>Rs. 7,800</p>
+                    <button onclick="addToCart('Trail Blazers')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: #333; color: white; font-family: Arial, sans-serif;">
+        <div style="display: flex; align-items: center; flex-direction: column; text-align: left;">
+            <img src="logo.png" alt="LuexStep Logo" style="width: 80px; height: 80px; margin-bottom: 10px;">
+            <div>
+                <p style="margin: 0; font-size: 16px; font-weight: bold;">LuexStep</p>
+                <p style="margin: 0; font-size: 14px;">Shoe Manufacturing Company</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Get In Touch</h3>
+            <p style="margin: 5px 0;">4th Lane, Colombo Road, Boralesgauwa</p>
+            <p style="margin: 5px 0;">Email: <a href="mailto:contact@luexstep.com" style="color: #00bcd4; text-decoration: none;">contact@luexstep.com</a></p>
+            <p style="margin: 5px 0;">Phone: <a href="tel:01120112526799" style="color: #00bcd4; text-decoration: none;">0112-0112-526799</a></p>
+        </div>
+
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Follow Us</h3>
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="instagram.png" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="youtube.png" alt="YouTube" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="x.png" alt="Twitter/X" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

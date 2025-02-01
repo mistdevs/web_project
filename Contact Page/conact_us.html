@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuexStep-Contact Us</title>
+    <link rel="icon" href="logo.png" type="image/x-icon"> 
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 60px; /* Adjust logo size */
+            margin-right: 10px;
+        }
+
+        .logo-container span {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+
+        ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            color: white;
+            background-color: #0f64d3;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #444;
+        }
+
+        .image-container {
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            border-radius: 10px; /* Optional: Adds rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+ 
+
+    .form-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .form-group textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .btn-container {
+      text-align: center;
+    }
+
+    .btn-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+
+    .btn-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .message-sent {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 600px;
+    }
+
+    .message-sent h2 {
+      margin-bottom: 20px;
+    }
+
+    .message-sent p {
+      margin-bottom: 10px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background-color: #0056b3;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Left: Logo and Name -->
+        <div class="logo-container">
+            <img src="logo.png" alt="LuexStep Logo">
+            <span>LuexStep</span>
+        </div>
+
+        <!-- Right: Navigation Links -->
+        <ul>
+            <li><a href="../Home Page/Home_Page.html">Home</a></li>
+            <li><a href="../web project/About.html">About</a></li>
+    
+            <li><a href="../login page/login.html"><button class="login-btn">Login</button></a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="image-container">
+        <img src="contact.jpg" alt="Descriptive Alt Text">
+    </div>
+    
+      <!-- Contact Form Section -->
+      <div class="form-container" id="contact-form">
+        <h2>Contact Us</h2>
+        <form onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="btn-container">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    
+      <!-- Message Sent Section (Hidden by Default) -->
+      <div class="message-sent" id="message-sent" style="display: none;">
+        <h2>Your message has been sent</h2>
+        <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+        <a href="#" class="back-btn" onclick="goBack()">Go Back</a>
+      </div>
+    
+      <script>
+        function handleForm(event) {
+          event.preventDefault(); // Prevent page reload
+    
+          // Get form data
+          const firstName = document.getElementById("firstName").value;
+          const lastName = document.getElementById("lastName").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+    
+          // Display submitted data
+          document.getElementById("displayFirstName").textContent = firstName;
+          document.getElementById("displayLastName").textContent = lastName;
+          document.getElementById("displayEmail").textContent = email;
+          document.getElementById("displayMessage").textContent = message;
+    
+          // Show message sent section
+          document.getElementById("contact-form").style.display = "none";
+          document.getElementById("message-sent").style.display = "block";
+        }
+    
+        function goBack() {
+          document.getElementById("contact-form").style.display = "block";
+          document.getElementById("message-sent").style.display = "none";
+        }
+      </script>
+
+    <footer style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: #333; color: white; font-family: Arial, sans-serif;">
+
+        <!-- Left Section: Company Logo and Name -->
+        <div style="display: flex; align-items: center; flex-direction: column; text-align: left;">
+            <img src="logo.png" alt="LuexStep Logo" style="width: 80px; height: 80px; margin-bottom: 10px;">
+            <div>
+                <p style="margin: 0; font-size: 16px; font-weight: bold;">LuexStep</p>
+                <p style="margin: 0; font-size: 14px;">Shoe Manufacturing Company</p>
+            </div>
+        </div>
+    
+        <!-- Center Section: Get In Touch -->
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Get In Touch</h3>
+            <p style="margin: 5px 0;">4th Lane, Colombo Road, Boralesgauwa</p>
+            <p style="margin: 5px 0;">Email: <a href="mailto:contact@luexstep.com" style="color: #00bcd4; text-decoration: none;">contact@luexstep.com</a></p>
+            <p style="margin: 5px 0;">Phone: <a href="tel:01120112526799" style="color: #00bcd4; text-decoration: none;">0112-0112-526799</a></p>
+        </div>
+    
+        <!-- Right Section: Social Media Links -->
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Follow Us</h3>
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="instagram.png" alt="instagram"  style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="facebook.png" alt="facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="youtube.png" alt="YouTube" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://x.com/?lang=en" target="_blank">
+                    <img src="x.png" alt="x" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

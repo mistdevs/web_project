@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuexStep - Wedges</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <!-- Left: Logo and Name -->
+        <div class="logo-container">
+            <img src="logo.png" alt="LuexStep Logo">
+            <span>LuexStep</span>
+        </div>
+
+        <!-- Right: Navigation Links -->
+        <ul>
+            <li><a href="../Home Page/Home_Page.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="../Contact Page/conact_us.html">Contact Us</a></li>
+           
+            <li><a href="../login page/login.html"><button class="login-btn">Login</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <p>Welcome to LuexStep! Check out our latest Wedges collection!</p>
+    </div>
+
+    <div id="cart-popup" class="cart-popup"></div>
+
+    <main>
+        <section class="hero">
+            <h1>Explore the Latest Wedges</h1>
+            <p>Style, comfort, and performance. All in one place.</p>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="products-grid">
+                <!-- First Row of Sneakers -->
+                <div class="product-card">
+                    <div class="product-image" onclick="location.href='wedgesp1.html'" style="cursor: pointer;">
+                        <img src="wedges/1.jpg" alt="Wedges 1">
+                    </div>
+                    <h3>Platform Wedge Heels</h3>
+                    <p>Rs.3200</p>
+                    <button onclick="addToCart('Platform Wedge Heels')">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="wedges/2.jpg" alt="Wedges 2">
+                    <h3>Ankle Strap Wedges</h3>
+                    <p>Rs.2400</p>
+                    <button onclick="addToCart('Ankle Strap Wedges')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="wedges/3.jpg" alt="Wedges 3">
+                    <h3>Peep Toe Wedges</h3>
+                    <p>Rs.1900</p>
+                    <button onclick="addToCart('Peep Toe Wedges')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Store Section -->
+        <section class="store">
+            <h2>Our Store</h2>
+            <div class="products-grid">
+                <!-- Remaining Sneakers -->
+                <div class="product-card">
+                    <img src="wedges/4.jpg" alt="Wedges 4">
+                    <h3>Lace Wedges</h3>
+                    <p>Rs.3250</p>
+                    <button onclick="addToCart('Lace Wedges')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="wedges/5.jpg" alt="Wedges 5">
+                    <h3>Espadrille Wedges</h3>
+                    <p>Rs.1750</p>
+                    <button onclick="addToCart('Espadrille Wedges')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="wedges/6.jpg" alt="Wedges 6">
+                    <h3>Clog Wedges</h3>
+                    <p>Rs.2390</p>
+                    <button onclick="addToCart('Clog Wedges')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="wedges/7.jpg" alt="Wedges 7">
+                    <h3>Oxford Wedgers</h3>
+                    <p>Rs.1669</p>
+                    <button onclick="addToCart('Oxford Wedgers')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="wedges/8.jpg" alt="Wedges 8">
+                    <h3>Wedge Boots</h3>
+                    <p>Rs.1800</p>
+                    <button onclick="addToCart('Wedge Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="wedges/9.jpg" alt="Wedges 9">
+                    <h3>Blazer Wedgers</h3>
+                    <p>Rs.1900</p>
+                    <button onclick="addToCart('Blazer Wedgers')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: #333; color: white; font-family: Arial, sans-serif;">
+        <div style="display: flex; align-items: center; flex-direction: column; text-align: left;">
+            <img src="logo.png" alt="LuexStep Logo" style="width: 80px; height: 80px; margin-bottom: 10px;">
+            <div>
+                <p style="margin: 0; font-size: 16px; font-weight: bold;">LuexStep</p>
+                <p style="margin: 0; font-size: 14px;">Shoe Manufacturing Company</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Get In Touch</h3>
+            <p style="margin: 5px 0;">4th Lane, Colombo Road, Boralesgauwa</p>
+            <p style="margin: 5px 0;">Email: <a href="mailto:contact@luexstep.com" style="color: #00bcd4; text-decoration: none;">contact@luexstep.com</a></p>
+            <p style="margin: 5px 0;">Phone: <a href="tel:01120112526799" style="color: #00bcd4; text-decoration: none;">0112-0112-526799</a></p>
+        </div>
+
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Follow Us</h3>
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="instagram.png" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="youtube.png" alt="YouTube" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="x.png" alt="Twitter/X" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

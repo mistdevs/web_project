@@ -1,0 +1,185 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuexStep - Boots</title>
+    <link rel="icon" href="logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <!-- Logo and Name -->
+        <div class="logo-container">
+            <img src="logo.png" alt="LuexStep Logo">
+            <span>LuexStep</span>
+        </div>
+
+        <!--  Navigation Links -->
+        <ul>
+            <li><a href="../Home Page/Home_Page.html">Home</a></li>
+            <li><a href="../web project/About.html">About</a></li>
+            <li><a href="../Contact Page/conact_us.html">Contact Us</a></li>
+        
+            <li><a href="../login page/login.html"><button class="login-btn">Login</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <p>Welcome to LuexStep! Check out our latest Boots collection!</p>
+    </div>
+
+    <div id="cart-popup" class="cart-popup"></div>
+
+    <main>
+        <section class="hero">
+            <h1>Explore the Latest Boots</h1>
+            <p>Style, comfort, and performance. All in one place.</p>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <a href="pearls_bow_decor_white_boots.html">
+                    <img src="boots1.jpg" alt="Pearls Bow Decor White Boots">
+                    </a>
+                    <h3>PEARLS BOW DECOR WHITE BOOTS</h3>
+                    <p>Rs.18900</p>
+                    <button onclick="addToCart('Pearls Bow Decor White Boots')">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="boots2.jpg" alt="Embroidery Floral Vines Octagon Heeled Boots">
+                    <h3>EMBROIDERY FLORAL VINES OCTAGON HEELED BOOTS</h3>
+                    <p>Rs.18500</p>
+                    <button onclick="addToCart('Embroidery Floral Vines Octagon Heeled Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots3.jpg" alt="Green Vegan Suede Lace Up Chuncky Heel Platform Boots">
+                    <h3>GREEN VEGAN SUEDE LACE UP CHUNCKY HEEL PLATFORM BOOTS</h3>
+                    <p>Rs.11600</p>
+                    <button onclick="addToCart('Green Vegan Suede Lace Up Chuncky Heel Platform Bootsq  ')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Store Section -->
+        <section class="store">
+            <h2>Our Store</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="boots4.jpg" alt="White Ankle Boots">
+                    <h3>WHITE ANKLE BOOTS</h3>
+                    <p>Rs.10800</p>
+                    <button onclick="addToCart('White Ankle Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots5.jpg" alt="Maroon Comfort Snow Boots">
+                    <h3>MAROON COMFORT SNOW BOOTS</h3>
+                    <p>Rs.12400</p>
+                    <button onclick="addToCart('Maroon Comfort Snow Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots6.jpg" alt="Pink Cute Buckle Decor Lace Up Boots">
+                    <h3>PINK CUTE BUCKLE DECOR LACE UP BOOTS</h3>
+                    <p>Rs.14900</p>
+                    <button onclick="addToCart('Pink Cute Buckle Decor Lace Up Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots7.jpg" alt="Baby Blue Cute Bow Decor Fur Round Boots">
+                    <h3>BABY BLUE CUTE BOW DECOR FUR ROUND BOOTS</h3>
+                    <p>Rs.13800</p>
+                    <button onclick="addToCart('Baby Blue Cute Bow Decor Fur Round Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots8.jpg" alt="Pink Lether Bow Decor Chunky Heel Boots">
+                    <h3>PINK LEATHER BOW DECOR CHUCKY HEEL BOOTS</h3>
+                    <p>Rs.10500</p>
+                    <button onclick="addToCart('Pink Lether Bow Decor Chunky Heel Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots9.jpg" alt="Block Heels Fashion Floral Rhinestones Ankle Boots">
+                    <h3>BLOCK HEELS FASHION FLORAL RHINESTONES ANKLE BOOTS</h3>
+                    <p>Rs.16900</p>
+                    <button onclick="addToCart('Block Heels Fashion Floral Rhinestones Ankle Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots10.jpg" alt="Flat Fringe Suede Round Toe Ankle Boots_Images">
+                    <h3>FLAT FRINGE SUEDE ROUND TOE ANKLE BOOTS</h3>
+                    <p>Rs.9900</p>
+                    <button onclick="addToCart('Flat Fringe Suede Round Toe Ankle Boots_Images')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots11.jpg" alt="Pink Lace Up Block Heel Round Toe Non-Slip Casual Ankle Boots">
+                    <h3>PINK LACE UP BLOCK HEEL ROUND TOE NON-SLIP CASUAL ANKLE BOOTS</h3>
+                    <p>Rs.12600</p>
+                    <button onclick="addToCart('Pink Lace Up Block Heel Round Toe Non-Slip Casual Ankle Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots12.jpg" alt="Ice Blue Lace Up Chuncky Heel Lita Boots">
+                    <h3>ICE BLUE LACE UP CHUNCKY HEEL LITA BOOTS</h3>
+                    <p>Rs.11900</p>
+                    <button onclick="addToCart('Ice Blue Lace Up Chuncky Heel Lita Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots13.jpg" alt="Classic Knee Hight Square Toe Lace Up Pink Lolita Boots">
+                    <h3>CLASSIC KNEE HIGHT SQUARE TOE LACE UP PINK LOLITA BOOTS</h3>
+                    <p>Rs.18900</p>
+                    <button onclick="addToCart('Classic Knee Hight Square Toe Lace Up Pink Lolita  Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots14.jpg" alt="White Buckle Decor Chuncky Heel Platform Lace Trim Ankle Boots">
+                    <h3>WHITE BUCKLE DECOR CHUNCKY HEEL PLATFORM LACE TRIM ANKLE BOOTS</h3>
+                    <p>Rs.13900</p>
+                    <button onclick="addToCart('White Buckle Decor Chuncky Heel Platform LaceT rim Ankle Boots')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="boots15.jpg" alt="Purple Suede Rabbit Fur Ankle Trim High Stilletto Heels Boots">
+                    <h3>PURPLE SUEDE RABBIT FUR ANKLE TRIM HIGH STILETTO HEELS BOOTS</h3>
+                    <p>Rs.12900</p>
+                    <button onclick="addToCart('Mint Green & Pink Sneakers')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: #333; color: white; font-family: Arial, sans-serif;">
+        <div style="display: flex; align-items: center; flex-direction: column; text-align: left;">
+            <img src="logo.png" alt="LuexStep Logo" style="width: 80px; height: 80px; margin-bottom: 10px;">
+            <div>
+                <p style="margin: 0; font-size: 16px; font-weight: bold;">LuexStep</p>
+                <p style="margin: 0; font-size: 14px;">Shoe Manufacturing Company</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Get In Touch</h3>
+            <p style="margin: 5px 0;">4th Lane, Colombo Road, Boralesgauwa</p>
+            <p style="margin: 5px 0;">Email: <a href="mailto:contact@luexstep.com" style="color: #00bcd4; text-decoration: none;">contact@luexstep.com</a></p>
+            <p style="margin: 5px 0;">Phone: <a href="tel:01120112526799" style="color: #00bcd4; text-decoration: none;">0112-0112-526799</a></p>
+        </div>
+
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Follow Us</h3>
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="instagram.png" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="youtube.png" alt="YouTube" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="x.png" alt="Twitter/X" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
